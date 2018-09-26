@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="utf8">
+    <title>{% block title %}Défaut{% endblock %}</title>
+</head>
+    <body>
+        <h1>{% block titleh1 %} Titre par défaut{% endblock %}</h1>
+        <h2>{% block titleh2 %} sous-titre par défaut{% endblock %}</h2>
+        <nav>
+            {% block menu %}
+                <ul>
+                    <li><a href="./">Accueil</a></li>
+                    <li><a href="./?content=contact">Contact</a></li>
+                    <li><a href="./?content=map">map</a></li>
+
+                </ul>
+
+            {% endblock %}
+            {% block content %}<p>Du contenu par defaut</p>{% endblock %}
+        </nav>
+    </body>
+</html>

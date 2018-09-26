@@ -1,0 +1,3 @@
+{% extends "base.html.twig" %}
+{#par defaut recup.content|e ou recup.content|escape donc protection maximal par defaut, il faut lui indiquer#}
+{% block content %}{{ recup.content|raw }}{% endblock %}
