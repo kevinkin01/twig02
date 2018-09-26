@@ -1,0 +1,8 @@
+# phpstorm ignore
+/.idea/
+# ignore vendor
+!vendor/
+vendor/*
+except twig and  autoload.php
+!vendor/autoload.php
+!vendor/twig/
